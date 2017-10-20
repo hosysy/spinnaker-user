@@ -1,5 +1,13 @@
+import AppAdminList from './src/AppAdminList';
+
 var express = require('express');
 var app = express();
+
+app.get('/appAdminList', function (req, res) {
+  //indexPage = fs.readFileSync( './public/index.html', 'utf8')
+  console.log(AppAdminList);
+  res.send(AppAdminList);
+});
 
 app.get('/user', function (req, res) {
   res.send('Hello User Bye~!!!!@#@#@@$@$@$@$!');
