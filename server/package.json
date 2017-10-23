@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "NODE_ENV=development babel src -d build --presets=es2015",
+    "start": "node ./build/main.js",
+    "development": "node ./scripts/development.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
