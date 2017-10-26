@@ -48,7 +48,7 @@
     "nodemon": "^1.12.1"
   },
   "scripts": {
-    "start": "npm run build; npm run express-build; node ./server/build/main.js",
+    "start": "node ./server/build/main.js",
     "build": "node scripts/build.js",
     "express-build": "NODE_ENV=development babel ./server/src -d ./server/build --presets=es2015",
     "test": "node scripts/test.js --env=jsdom"
